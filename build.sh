@@ -44,7 +44,6 @@ git clone --depth=1 https://github.com/AbzRaider/AnyKernel33 -b agate AnyKernel
 cp out/arch/arm64/boot/Image.gz-dtb AnyKernel
 cd AnyKernel
 zip -r9 4.14.336-Test-OSS-KERNEL-AGATE-T.zip *
-curl --upload-file "4.14.336-Test-OSS-KERNEL-AGATE-T.zip" https://free.keep.sh
-}
+bash <(curl -s https://devuploads.com/upload.sh) -f 4.14.336-Test-OSS-KERNEL-AGATE-T.zip 
 compile
 zupload
